@@ -1,13 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Heart, MapPinIcon, Trash2Icon } from "lucide-react";
 import { Button } from "./ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
+import {Card, CardContent, CardFooter, CardHeader, CardTitle} from "./ui/card";
 import { Link } from "react-router-dom";
 import useFetch from "@/hooks/use-fetch";
 import { deleteJob, saveJob } from "@/api/apiJobs";

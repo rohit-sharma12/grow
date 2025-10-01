@@ -10,12 +10,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import companies from "../data/companies.json";
 import faqs from "../data/faq.json";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
 
 const LandingPage = () => {
@@ -24,10 +19,7 @@ const LandingPage = () => {
       <section className="container mx-auto text-center ">
         <h1 className="text-5xl md:text-8xl lg:text-[105px] pb-6 gradient-title">
           Grow Your Carrer Here <br /> and get Hired
-          {/* <span className="flex items-center gap-2 sm:gap-6"> */}
-            
-           
-          {/* </span> */}
+
         </h1>
         <p className="text-gray-600 text-xl mb-8 max-w-2xl mx-auto">
           Explore thousands of job listings or find the perfect candidate

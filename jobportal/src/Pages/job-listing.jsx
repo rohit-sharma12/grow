@@ -26,17 +26,9 @@ const JobListing = () => {
 
   const { isLoaded } = useUser();
 
-  const {
-    
-    data: companies,
-    fn: fnCompanies,
-  } = useFetch(getCompanies);
+  const {data: companies,fn: fnCompanies } = useFetch(getCompanies);
 
-  const {
-    loading: loadingJobs,
-    data: jobs,
-    fn: fnJobs,
-  } = useFetch(getJobs, {
+  const {loading: loadingJobs, data: jobs, fn: fnJobs } = useFetch(getJobs, {
     location,
     company_id,
     searchQuery,
@@ -46,12 +38,10 @@ const JobListing = () => {
     if (isLoaded) {
       fnCompanies();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isLoaded]);
 
   useEffect(() => {
     if (isLoaded) fnJobs();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isLoaded, location, company_id, searchQuery]);
 
   const handleSearch = (e) => {

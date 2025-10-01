@@ -1,6 +1,5 @@
 import supabaseClient, { supabaseUrl } from "@/utils/supabase";
 
-// - Apply to job ( candidate )
 export async function applyToJob(token, _, jobData) {
   const supabase = await supabaseClient(token);
 
